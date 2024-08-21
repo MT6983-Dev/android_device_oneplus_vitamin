@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libcamera_metadata.vendor \
+    libcamera_metadata_shim \
     libexif.vendor \
     libpng.vendor
 

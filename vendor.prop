@@ -225,6 +225,8 @@ vendor.powerhal.interaction.max=50
 vendor.powerhal.interaction.offset=0
 
 # Radio
+persist.vendor.anr.enhancement=0
+persist.vendor.vonr_setting_support=1
 persist.radio.multisim.config=dsds
 persist.vendor.connsys.chipid=-1
 persist.vendor.connsys.dynamic.dump=0

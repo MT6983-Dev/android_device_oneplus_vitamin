@@ -364,6 +364,7 @@ PRODUCT_PACKAGES += \
     OPlusSettingsProviderResNord3 \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
+    OPlusTelephonyResTarget \
     OPlusTetheringConfigResTarget \
     OPlusWifiResTarget \
     TelephonyOverlayVitamin

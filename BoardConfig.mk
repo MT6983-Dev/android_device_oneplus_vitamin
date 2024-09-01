@@ -6,6 +6,7 @@
 
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 DEVICE_PATH := device/oneplus/vitamin
 KERNEL_PATH := $(DEVICE_PATH)-kernel
@@ -70,8 +71,11 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNE
 TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/$(BOARD_KERNEL_IMAGE_NAME)
 TARGET_FORCE_PREBUILT_KERNEL := true
 
-TARGET_KERNEL_SOURCE := kernel/oneplus/mt6983
-TARGET_KERNEL_CONFIG := k6893v1_64_k510_defconfig
+TARGET_KERNEL_SOURCE := kernel/oneplus/vitamin
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    mgk_64_k510_defconfig
+
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Kernel - prebuilt

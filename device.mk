@@ -376,6 +376,7 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayVitamin
 
 PRODUCT_PACKAGES += \
+    ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget \
     PowerOffAlarmResTarget

@@ -140,6 +140,11 @@ PRODUCT_PACKAGES += \
 # Carrier Config Overlays
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay
+
+# Cgroup
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/cgroups.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
+    system/core/libprocessgroup/profiles/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json 
     
 # Display
 PRODUCT_PACKAGES += \

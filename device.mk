@@ -376,6 +376,9 @@ PRODUCT_PACKAGES += \
     TelephonyOverlayVitamin
 
 PRODUCT_PACKAGES += \
+    OPlusNfcResTarget
+
+PRODUCT_PACKAGES += \
     ApertureResTarget \
     LineageSDKResTarget \
     LineageSettingsProviderResTarget \

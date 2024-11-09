@@ -12,13 +12,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/vitamin/device.mk)
 
 # Inherit from the LESSAOSP configuration.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 PRODUCT_BRAND := OnePlus
 PRODUCT_DEVICE := vitamin
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := CPH2491
-PRODUCT_NAME := aosp_vitamin
+PRODUCT_NAME := derp_vitamin
 
 PRODUCT_SYSTEM_DEVICE := OP556FL1
 PRODUCT_SYSTEM_NAME := CPH2491

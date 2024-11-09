@@ -251,8 +251,8 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    libshim_sink \
-    libui_shim
+    libui_shim \
+#    libshim_sink
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.mediatek.ims.xml \
@@ -532,13 +532,13 @@ PRODUCT_PACKAGES += \
     vndservicemanager
 
 # Wifi
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd \
-    libwifi-hal-wrapper \
-    android.hardware.wifi-service
+#    libwifi-hal-wrapper \
+    #android.hardware.wifi-service
 
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
     android.hardware.tetheroffload.control@1.0.vendor \
     android.hardware.tetheroffload.control@1.1.vendor \

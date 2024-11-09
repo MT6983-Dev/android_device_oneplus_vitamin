@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vitamin.mk
+    $(LOCAL_DIR)/derp_vitamin.mk

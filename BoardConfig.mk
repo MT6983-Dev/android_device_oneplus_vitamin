@@ -9,6 +9,7 @@ BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 #BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 BUILD_BROKEN_PREBUILT_ELF_FILES := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 DEVICE_PATH := device/oneplus/vitamin
 KERNEL_PATH := $(DEVICE_PATH)-kernel
@@ -35,7 +36,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/device_framework_matrix.xml \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
-    vendor/aosp/config/device_framework_matrix.xml
+    vendor/derp/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 
@@ -81,7 +82,7 @@ TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     mgk_64_k510_defconfig
 
-#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
@@ -128,7 +129,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_FLASH_BLOCK_SIZE := $(BOARD_KERNEL_PAGESIZE)
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/derp/config/BoardConfigReservedSize.mk
 
 BOARD_SUPER_PARTITION_SIZE := 15032385536
 BOARD_SUPER_PARTITION_GROUPS := oneplus_dynamic_partitions

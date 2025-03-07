@@ -247,7 +247,8 @@ PRODUCT_PACKAGES += \
     OPlusSystemUIResTarget \
     OPlusTelephonyResTarget \
     OPlusTetheringConfigResTarget \
-    OPlusWifiResTarget
+    OPlusWifiResTarget \
+    CarrierConfigResCommon
 
 PRODUCT_PACKAGES += \
     OPlusNfcResTarget

@@ -5,6 +5,7 @@
 #
 
 BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
 DEVICE_PATH := device/oneplus/vitamin
 KERNEL_PATH := $(DEVICE_PATH)-kernel

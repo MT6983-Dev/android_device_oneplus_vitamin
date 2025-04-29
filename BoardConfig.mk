@@ -142,9 +142,6 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Platform
 TARGET_BOARD_PLATFORM := mt6983
 
-# Power
-TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //hardware/oplus:libperfmgr-ext-oplus
-
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/init/fstab.mt6983

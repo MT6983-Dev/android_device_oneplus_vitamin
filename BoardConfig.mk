@@ -29,7 +29,7 @@ TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     hardware/mediatek/vintf/mediatek_framework_compatibility_matrix.xml \
     hardware/oplus/vintf/device_framework_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/lessaosp/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_FILES += $(DEVICE_PATH)/manifest_odm.xml
@@ -114,7 +114,7 @@ BOARD_DTBOIMG_PARTITION_SIZE := 8388608
 BOARD_FLASH_BLOCK_SIZE := $(BOARD_KERNEL_PAGESIZE)
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := $(BOARD_BOOTIMAGE_PARTITION_SIZE)
 
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/lessaosp/config/BoardConfigReservedSize.mk
 
 BOARD_SUPER_PARTITION_SIZE := 15032385536
 BOARD_SUPER_PARTITION_GROUPS := oneplus_dynamic_partitions

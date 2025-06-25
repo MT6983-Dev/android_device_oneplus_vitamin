@@ -6,14 +6,16 @@
 # Inherit from the custom device configuration.
 $(call inherit-product, device/oneplus/vitamin/device.mk)
 
-# Inherit from the LineageOS configuration.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit from the LessAOSP configuration.
+$(call inherit-product, vendor/lessaosp/config/common_full_phone.mk)
 
 PRODUCT_BRAND := OnePlus
 PRODUCT_DEVICE := vitamin
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := CPH2493
-PRODUCT_NAME := lineage_vitamin
+PRODUCT_NAME := lessaosp_vitamin
+
+LESSAOSP_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
